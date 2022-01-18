@@ -1,0 +1,32 @@
+.policy {
+    position: relative;
+    padding: 25px 0 25px 0;
+    .container {
+        border: solid 2px #eee;
+        padding: 20px;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__subtitle {
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    &__text, &__list {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+        list-style-type: none;
+        span {
+            display: inline-block;
+            border-bottom: 1.5px dotted #ff0000;
+            background-color: #fcfce3;
+        }
+        li {
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+    }
+}

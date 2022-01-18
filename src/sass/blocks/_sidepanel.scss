@@ -1,0 +1,57 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                transition: all 0.3s;
+            }
+        }
+        &_rotate {
+            transform: rotate(-90deg);
+        }
+        &-vk {
+            &:hover {
+                svg path {
+                    fill: rgb(0, 132, 255);
+                }
+            }
+        }
+        &-telegram {
+            &:hover {
+                svg path {
+                    fill: rgb(0, 132, 255);
+                }
+            }
+        }
+        &-github {
+            &:hover {
+                svg path {
+                    fill: $main-color;
+                }
+            }
+        }
+    }
+    &__divider {
+        height: 70px;
+        width: 2px;
+        background-color: #000;
+    }
+    &__text {
+        height: 150px;
+        width: 25px;
+        span {
+            display: block;
+            transform: rotate(-90deg) translate(-35%,-260%);
+            width: 150px;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.btn {
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+    transition: all 0.4s;
+    border: none;
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 3px 3px 20px black;
+    }
+}
+
+.policy {
+    &__btn {
+        position: fixed;
+        left: 85%;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    svg path {
+        fill: #000;
+        transition: all 0.3s;
+    }
+    &:hover {
+        svg path {
+            filter: contrast(10%);
+        }
+    }
+}
